@@ -14,46 +14,101 @@
             padding: 20px;
             background-color: #f4f4f4;
         }
+
         h1 {
             color: #000d18;
             text-align: center;
         }
+
         .links-container {
             background-color: white;
             border-radius: 8px;
             padding: 20px;
-            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
         }
+
         ul {
-            font-size: 22px;
-            list-style-type: decimal;
-            padding-left: 30px;
+            list-style-type: none;
+            padding: 0;
         }
+
         li {
+            display: flex;
+            align-items: center;
             margin-bottom: 10px;
         }
+
         a {
-            color: #2a2c2c;
+            flex: 1;
+            padding: 10px;
+            background-color: #f1eded;
+            color: #333;
             text-decoration: none;
+            border-radius: 8px;
+            transition: background-color 0.3s ease;
+            margin-left: 10px;
+            font-size: 18px;
+        }
+
+        a:hover {
+            background-color: #d4d4d4;
+        }
+
+        img {
+            max-width: 100px;
+            max-height: 60px;
+            border-radius: 4px;
+        }
+
+        .title-links a {
+            color: #000d18;
+            text-decoration: none;
+            font-size: 20px;
             transition: color 0.3s ease;
         }
-        a:hover {
-            color: #725e5e;
-            text-decoration: underline;
+
+        .title-links a:hover {
+            color: #0073b1;
         }
     </style>
 </head>
 <body>
-<h1>My Netlify Deployments</h1>
+<h1>My Netlify Deployments
+    <span class="title-links">
+    <a href="https://www.linkedin.com/in/renatamurzina" target="_blank">LinkedIn</a>
+    <a href="https://github.com/RenaSpb" target="_blank">GitHub</a>
+    </span>
+</h1>
 <div class="links-container">
     <ul>
-        <li><a href="https://todolist-with-dnd.netlify.app" target="_blank">Todo App with Drag and Drop</a></li>
-        <li><a href="https://matching-m.netlify.app" target="_blank">Matching game</a></li>
-        <li><a href="https://react-plant-store.netlify.app" target="_blank">Plant store</a></li>
-        <li><a href="https://wa-state-gallery.netlify.app" target="_blank">WA state photo gallery</a></li>
-        <li><a href="https://tictactoe-m.netlify.app" target="_blank">Tic Tac Toe</a></li>
-        <li><a href="https://kanban-lists.netlify.app" target="_blank">Kanban store</a></li>
-        <li><a href="https://current-weather-widgets.netlify.app" target="_blank">Weather widget</a></li>
+        <li>
+            <img src="pictures/todo-app-image.jpg" alt="Todo App Image">
+            <a href="https://todolist-with-dnd.netlify.app" target="_blank">Todo with Drag and Drop</a>
+        </li>
+        <li>
+            <img src="pictures/matching-game-image.jpg" alt="Matching Game Image">
+            <a href="https://matching-m.netlify.app" target="_blank">Matching game</a>
+        </li>
+        <li>
+            <img src="pictures/plant-store-image.jpg" alt="Plant Store Image">
+            <a href="https://react-plant-store.netlify.app" target="_blank">Plant store</a>
+        </li>
+        <li>
+            <img src="pictures/wa-gallery-image.jpg" alt="WA State Gallery Image">
+            <a href="https://wa-state-gallery.netlify.app" target="_blank">WA state photo gallery</a>
+        </li>
+        <li>
+            <img src="pictures/tic-tac-toe-image.jpg" alt="Tic Tac Toe Image">
+            <a href="https://tictactoe-m.netlify.app" target="_blank">Tic Tac Toe</a>
+        </li>
+        <li>
+            <img src="pictures/kanban-store-image.jpg" alt="Kanban Store Image">
+            <a href="https://kanban-lists.netlify.app" target="_blank">Kanban store</a>
+        </li>
+        <li>
+            <img src="pictures/weather-widget-image.jpg" alt="Weather Widget Image">
+            <a href="https://current-weather-widgets.netlify.app" target="_blank">Weather widget</a>
+        </li>
     </ul>
 </div>
 </body>
